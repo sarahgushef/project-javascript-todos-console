@@ -108,3 +108,16 @@ const searchTodosText = (data, searchText) => {
 const foundTodosInArray = searchTodosText(myTodos, "the");
 
 showAllTodos(foundTodosInArray);
+
+//Find Specific Todos
+console.log(`Find specific Todos based on id`);
+
+const findTodosID = (todoList, id) => {
+  for (index = 0; index < todoList.length; index++) {
+    if (todoList[index].id === id) {
+      console.log(todoList[index]);
+    }
+  }
+};
+
+findTodosID(myTodos, 2);
